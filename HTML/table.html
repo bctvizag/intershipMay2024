@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid gray;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .break {
+            color: red;
+            font-weight: bold;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Table Caption</caption>
+        <tr>
+            <th></th>
+            <th>1st Period</th>
+            <th>2nd Period</th>
+            <th>3rd Period</th>
+            <th></th>
+            <th>4th Period</th>
+            <th>5th Period</th>
+            <th>6th Period</th>
+            
+        </tr>
+        <tr>
+            <th>Mon</th>
+            <td>English</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <td rowspan="6" class="break"> Lunch Break</td>
+            <td>Drawing</td>
+            <td>Social</td>
+            <td>G K</td>
+            
+        </tr>
+        <tr>
+            <th>Tue</th>
+            <td>English</td>
+            <td colspan="2">Science</td>
+            <!-- <td>Maths</td> -->
+            <!-- <td></td> -->
+            
+            <td colspan="2">Maths</td>
+            <td>Social</td>
+            <!-- <td>G K</td>            -->
+        </tr>
+        <tr>
+            <th>Wed</th>
+            <td>English</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <!-- <td></td> -->
+            <td>Drawing</td>
+            <td colspan="2">Games</td>
+            <!-- <td>G K</td> -->
+            
+        </tr>
+        <tr>
+            <th>Thr</th>
+            <td>English</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <!-- <td></td> -->
+            <td>Drawing</td>
+            <td>Social</td>
+            <td>G K</td>           
+        </tr>
+        <tr>
+            <th>Sat</th>
+            <td>English</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <!-- <td></td> -->
+            <td>Drawing</td>
+            <td>Social</td>
+            <td>G K</td>
+            
+        </tr>
+        <tr>
+            <th>Thr</th>
+            <td>English</td>
+            <td>Science</td>
+            <td>Maths</td>
+            <!-- <td></td> -->
+            <td>Drawing</td>
+            <td>Social</td>
+            <td>G K</td>           
+        </tr>
+    </table>
+</body>
+</html>

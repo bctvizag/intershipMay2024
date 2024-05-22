@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .red {
+            color: red;
+        }
+
+        .green {
+            color: green;
+        }
+
+        p.red#p1{
+            background-color: limegreen;
+        }
+
+         p.red{
+            background-color: gold;
+        }
+
+        header, footer { 
+            background-color: burlywood;
+        }
+
+
+        .box {
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        div>p {
+            color:green
+        }
+
+        div b {
+            color: blueviolet;
+        }
+
+        p b {
+            background-color: sandybrown;
+        }
+
+        .slibling .red ~ div {
+            background-color:  rgb(112, 170, 112);
+        }
+        .slibling .red + div {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="red">Lorem ipsum dolor sit amet.</p>
+    <p id="p1" class="red">Lorem ipsum dolor sit amet.</p>
+
+    <div class="box">
+        <article>
+            <p> div &#10140; article &#10140; p: Lorem ipsum dolor sit <b>bold text</b> adipisicing elit.</p>
+        </article>
+        <p> <p> div &#10140;  p: Lorem ipsum dolor sit <b>bold text</b> adipisicing elit.</p>
+    </div>
+    <hr>
+    <header>
+        <p> Lorem ipsum dolor sit <b>bold text</b> adipisicing elit.</p>
+    </header>
+    <nav>
+        <p> Lorem ipsum dolor sit <b>bold text</b> adipisicing elit.</p>
+    </nav>
+    <section>
+        <p> Lorem ipsum dolor sit <b>bold text</b> adipisicing elit.</p>
+    </section>
+    <aside>
+        <p> Lorem ipsum dolor sit <b>bold text</b> adipisicing elit.</p>
+    </aside>
+    <footer>
+        <p> Lorem ipsum dolor sit <b>bold text</b> adipisicing elit.</p>
+    </footer>
+
+    <div class="slibling">
+        <div class="red"> division 01</div>
+        <div> division 02</div>
+        <div> division 02</div>
+        <div class="green"> division 03</div>
+        <div> division 04</div>
+        <section> Section 04</section>
+        <div> division 04</div>
+        <div> division 04</div>
+        <div> division 04</div>
+        <hr>
+        <div class="red"> division 05</div>
+        <div> division 06</div>
+        <div> division 07</div>
+        <div> division 08</div>
+    </div>
+    <hr>
+    <div>
+        final divison
+    </div>
+
+</body>
+</html>

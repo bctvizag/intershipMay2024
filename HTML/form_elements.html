@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frm1 {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action=""  method="">
+        <fieldset>
+            <legend>User Information </legend>
+            <div class="frm1">
+                <label for="username">text</label>
+                <input type="text" id="username" required minlength="3" maxlength="10" placeholder="Enter user Name" value="123456">
+        
+                <label for="">PAN</label>
+                <input type="text" pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" placeholder="AJGPN1206C" value="AJGPN1206C">
+        
+                <label for="">message</label>
+                <input type="text" pattern="[a-zA-Z0-9]+" placeholder="AJGPN1206C">
+        
+                <label for="country">Country</label>
+                <input type="text" id="country" disabled value="India">
+        
+                <label for="country">Country</label>
+                <input type="text" id="country" readonly value="India">
+        
+                <label for="">number</label>
+                <input type="number" max="60" min="18">
+        
+                <label for="">password</label>
+                <input type="password">
+        
+                <label for="">email</label>
+                <input type="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Section 2</legend>
+           <div class="frm1">
+            <label for="">date</label>
+            <input type="date" min="2024-01-01" max="2024-04-30">
+    
+            <label for="">time</label>
+            <input type="time">
+    
+            <label for="">date & time</label>
+            <input type="datetime-local">
+    
+            <label for="">week</label>
+            <input type="week">
+    
+            <label for="">month</label>
+            <input type="month">
+    
+            <label for="">checkbox</label>
+            <div>
+               <label for="">Eng <input type="checkbox" checked disabled></label> 
+               <label for="">hindi</label> <input type="checkbox">
+               <label for="">Telugu</label> <input type="checkbox">
+            </div>
+    
+            <label for="">Radio</label>
+            <div>
+                <label for="">male <input type="radio" name="gender"></label>
+                <label for="">female <input type="radio" name="gender"></label>
+            </div>
+    
+            <label for="">range</label>
+            <input type="range" >
+    
+            <label for="">color</label>
+            <input type="color" >
+    
+            <label for="">select</label>
+            <select>
+            <optgroup label="AP">
+                <option value="vskp">Visakhapatnam</option>
+                <option value="bza" selected>Vijayawada</option>
+                <option value="NLR">Nellore</option>
+            </optgroup> 
+            <optgroup label="TG">
+                <option value="sc">Secunderbad</option>
+                <option value="ngd">Nalgonda</option>
+                <option value="war">Warangal</option>
+            </optgroup>     
+    
+            </select>
+    
+            <label for="">datalist</label>
+            <input type="text" list="list1">
+            <datalist id="list1">
+                <option value="Visakhapatnam"></option>
+                <option value="Vijayawada"></option>
+                <option value="Nellore"></option>
+                <option value="Secunderbad"></option>
+                <option value="Nalgonda"></option>
+                <option value="Warangal"></option>
+            </datalist>
+
+           
+           
+    
+            <input type="submit" value="Send">
+            <input type="reset" value="Cancel">
+           </div>
+        </fieldset>
+               
+
+
+       
+
+        
+    </form>
+</body>
+</html>
